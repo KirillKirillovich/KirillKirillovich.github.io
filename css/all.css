@@ -1,0 +1,1281 @@
+@charset "UTF-8";
+/* SCSS Compiled */
+/***************************************************              GENERAL RESET STYLES             ***************************************************/
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent; }
+
+*:focus {
+  outline: none; }
+
+body {
+  line-height: 1; }
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+nav ul {
+  list-style: none; }
+
+ol, ul {
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+  text-decoration: none; }
+
+a:hover {
+  text-decoration: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+img {
+  border-style: none;
+  max-width: 100%; }
+
+form fieldset {
+  margin: 0;
+  padding: 0;
+  border: none; }
+
+input, textarea, select {
+  vertical-align: middle;
+  color: #000;
+  padding: 0; }
+
+input, select {
+  vertical-align: middle; }
+
+input::-webkit-input-placeholder {
+  color: #ebedec; }
+
+input:focus::-webkit-input-placeholder {
+  color: #ebedec; }
+
+/*@media*/
+/* @media (min-width: 1921px){} 													QHD \ UHD
+@media (min-width: 1600px) and (max-width: 1919px) {}	HD +
+@media (min-width: 1440px) and (max-width: 1599px) {}	macbook
+@media (min-width: 1360px) and (max-width: 1439px) {}	HD
+@media (min-width: 1280px) and (max-width: 1359px) {} IPAD2
+@media (min-width: 1024px) and (max-width: 1279px) {} IPAD
+@media (min-width: 896px) and (max-width: 1023px) {}	Ip Xs max horizontal
+@media (min-width: 812px) and (max-width: 895px) {}		Ip Xs horizontal
+@media (min-width: 768px) and (max-width: 811px) {}		Tablet
+@media (min-width: 736px) and (max-width: 767px) {}		Ip 6,7,8 Plus horizontal
+@media (min-width: 667px) and (max-width: 735px) {}		Ip 6,7,8 horizontal
+@media (min-width: 568px) and (max-width: 666px) {}		Ip 5 horizontal
+@media (min-width: 480px) and (max-width: 567px) {}		Ip 4 horizontal
+@media (min-width: 414px) and (max-width: 479px) {}		Ip 6,7,8
+@media (min-width: 320px) and (max-width: 413px) {}		Ip 4,5 */
+/*@media end*/
+/*usage  @include font-size(13);*/
+/* Brand Colors ------------------------------------------------*/
+/* wrapper */
+#wrapper {
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 100%; }
+
+.layout {
+  margin: 0 auto;
+  position: relative;
+  width: 1400px; }
+
+main {
+  display: block;
+  width: 100%;
+  position: relative; }
+
+#content {
+  position: relative; }
+
+#sidebar {
+  position: relative; }
+
+aside {
+  position: relative; }
+
+/**** VAR *****/
+/**** HEADER ****/
+header {
+  width: 100%;
+  display: block;
+  position: relative;
+  background-image: url(../images/Rectangle.png);
+  height: 660px;
+  font-family: "Oswald"; }
+  @media (min-width: 667px) and (max-width: 767px) {
+    header {
+      height: 500px; } }
+  @media (min-width: 480px) and (max-width: 666px) {
+    header {
+      height: 450px; } }
+  @media (min-width: 414px) and (max-width: 479px) {
+    header {
+      height: 450px; } }
+  @media (min-width: 320px) and (max-width: 413px) {
+    header {
+      height: 400px; } }
+  header .layout {
+    display: block;
+    width: 1110px;
+    margin: 0 auto; }
+  header .header__menu {
+    float: right;
+    width: 50px;
+    height: 50px;
+    background-color: #F7654A;
+    margin-top: 30px; }
+    @media (min-width: 480px) and (max-width: 666px) {
+      header .header__menu {
+        position: relative;
+        height: 30px;
+        width: 30px;
+        margin-top: 25px; } }
+    @media (min-width: 320px) and (max-width: 413px) {
+      header .header__menu {
+        position: relative;
+        height: 30px;
+        width: 30px;
+        margin-top: 25px; } }
+    header .header__menu img {
+      margin-left: 14px;
+      margin-top: 14px; }
+      @media (min-width: 480px) and (max-width: 666px) {
+        header .header__menu img {
+          position: absolute;
+          top: 0px;
+          bottom: 0px;
+          left: 0px;
+          right: 0px;
+          margin: auto; } }
+      @media (min-width: 320px) and (max-width: 413px) {
+        header .header__menu img {
+          position: absolute;
+          top: 0px;
+          bottom: 0px;
+          left: 0px;
+          right: 0px;
+          margin: auto; } }
+    @media (min-width: 1024px) and (max-width: 1110px) {
+      header .header__menu {
+        margin-right: 50px; } }
+  header .header__logo {
+    display: inline-block;
+    margin-top: 20px; }
+    @media (min-width: 1024px) and (max-width: 1110px) {
+      header .header__logo {
+        margin-left: 20px; } }
+    @media (min-width: 480px) and (max-width: 666px) {
+      header .header__logo {
+        max-width: 40px; } }
+    @media (min-width: 320px) and (max-width: 413px) {
+      header .header__logo {
+        max-width: 40px; } }
+  header .header__title {
+    margin-top: 112px;
+    display: block;
+    text-align: center;
+    color: #FFFFFF; }
+    @media (min-width: 667px) and (max-width: 767px) {
+      header .header__title {
+        margin-top: 70px; } }
+    @media (min-width: 480px) and (max-width: 666px) {
+      header .header__title {
+        margin-top: 50px; } }
+    @media (min-width: 414px) and (max-width: 479px) {
+      header .header__title {
+        margin-top: 50px; } }
+    @media (min-width: 320px) and (max-width: 413px) {
+      header .header__title {
+        margin-top: 35px; } }
+    header .header__title h1 {
+      font-size: 64px; }
+      @media (min-width: 667px) and (max-width: 767px) {
+        header .header__title h1 {
+          font-size: 50px; } }
+      @media (min-width: 480px) and (max-width: 666px) {
+        header .header__title h1 {
+          font-size: 40px; } }
+      @media (min-width: 414px) and (max-width: 479px) {
+        header .header__title h1 {
+          font-size: 34px; } }
+      @media (min-width: 320px) and (max-width: 413px) {
+        header .header__title h1 {
+          font-size: 30px; } }
+    header .header__title p {
+      margin-top: 35px;
+      font-size: 18px; }
+  @media (min-width: 1024px) and (max-width: 1110px) {
+    header .layout {
+      width: 1000px; } }
+  @media (min-width: 768px) and (max-width: 1023px) {
+    header .layout {
+      width: 750px; } }
+  @media (min-width: 667px) and (max-width: 767px) {
+    header .layout {
+      width: 650px; } }
+  @media (min-width: 480px) and (max-width: 666px) {
+    header .layout {
+      width: 450px; } }
+  @media (min-width: 414px) and (max-width: 479px) {
+    header .layout {
+      width: 400px; } }
+  @media (min-width: 320px) and (max-width: 413px) {
+    header .layout {
+      width: 300px; } }
+
+/***********MAIN********/
+main {
+  font-family: "Oswald"; }
+  main .layout {
+    display: block;
+    width: 1110px;
+    margin: 0 auto; }
+  main .sectionAge {
+    background-color: #ffff;
+    width: 100%;
+    height: 300px;
+    position: absolute;
+    top: -150px; }
+    @media (min-width: 667px) and (max-width: 767px) {
+      main .sectionAge {
+        height: 200px; } }
+    @media (min-width: 480px) and (max-width: 666px) {
+      main .sectionAge {
+        height: 150px; } }
+    @media (min-width: 414px) and (max-width: 479px) {
+      main .sectionAge {
+        height: 150px; } }
+    @media (min-width: 320px) and (max-width: 413px) {
+      main .sectionAge {
+        height: 150px; } }
+    main .sectionAge ul {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-pack: distribute;
+      justify-content: space-around;
+      margin-top: 57px; }
+      @media (min-width: 414px) and (max-width: 479px) {
+        main .sectionAge ul {
+          margin-top: 35px; } }
+      @media (min-width: 320px) and (max-width: 413px) {
+        main .sectionAge ul {
+          margin-top: 15px; } }
+      main .sectionAge ul li {
+        text-align: center; }
+        main .sectionAge ul li .sectionAge__number {
+          font-size: 72px;
+          color: #F7654A; }
+          @media (min-width: 480px) and (max-width: 666px) {
+            main .sectionAge ul li .sectionAge__number {
+              font-size: 50px; } }
+          @media (min-width: 414px) and (max-width: 479px) {
+            main .sectionAge ul li .sectionAge__number {
+              font-size: 40px; } }
+          @media (min-width: 320px) and (max-width: 413px) {
+            main .sectionAge ul li .sectionAge__number {
+              font-size: 50px; } }
+        main .sectionAge ul li .sectionAge__year {
+          font-size: 36px;
+          color: #000000;
+          margin-top: 25px; }
+          @media (min-width: 480px) and (max-width: 666px) {
+            main .sectionAge ul li .sectionAge__year {
+              font-size: 30px; } }
+          @media (min-width: 414px) and (max-width: 479px) {
+            main .sectionAge ul li .sectionAge__year {
+              font-size: 20px; } }
+          @media (min-width: 320px) and (max-width: 413px) {
+            main .sectionAge ul li .sectionAge__year {
+              margin-top: 15px; } }
+        main .sectionAge ul li .sectionAge__text {
+          font-size: 18px;
+          color: #999999;
+          margin-top: 10px; }
+  main .sectionWorks {
+    display: inline-block;
+    height: 1081px;
+    width: 100%;
+    text-align: center; }
+    @media (min-width: 768px) and (max-width: 1023px) {
+      main .sectionWorks {
+        height: 100%; } }
+    @media (min-width: 667px) and (max-width: 767px) {
+      main .sectionWorks {
+        height: 100%; } }
+    main .sectionWorks .sectionWorks__works {
+      display: block; }
+    main .sectionWorks h2 {
+      margin-top: 250px;
+      font-size: 36px; }
+      @media (min-width: 667px) and (max-width: 767px) {
+        main .sectionWorks h2 {
+          margin-top: 200px; } }
+      @media (min-width: 480px) and (max-width: 666px) {
+        main .sectionWorks h2 {
+          margin-top: 100px; } }
+      @media (min-width: 414px) and (max-width: 479px) {
+        main .sectionWorks h2 {
+          margin-top: 100px; } }
+      @media (min-width: 320px) and (max-width: 413px) {
+        main .sectionWorks h2 {
+          margin-top: 50px; } }
+    main .sectionWorks ul {
+      width: 100%;
+      margin-top: 60px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+      justify-content: space-between; }
+      @media (min-width: 768px) and (max-width: 1023px) {
+        main .sectionWorks ul {
+          width: 700px; } }
+      @media (min-width: 667px) and (max-width: 767px) {
+        main .sectionWorks ul {
+          width: 600px; } }
+      @media (min-width: 480px) and (max-width: 666px) {
+        main .sectionWorks ul {
+          display: block;
+          width: 400px;
+          margin: 0 auto; } }
+      @media (min-width: 414px) and (max-width: 479px) {
+        main .sectionWorks ul {
+          display: block;
+          width: 380px;
+          margin: auto; } }
+      @media (min-width: 320px) and (max-width: 413px) {
+        main .sectionWorks ul {
+          display: block;
+          width: 280px;
+          margin: auto; } }
+      main .sectionWorks ul li {
+        position: relative;
+        width: 100%;
+        text-align: left; }
+        @media (min-width: 1024px) and (max-width: 1110px) {
+          main .sectionWorks ul li {
+            width: 300px; } }
+        @media (min-width: 768px) and (max-width: 1023px) {
+          main .sectionWorks ul li {
+            text-align: left; } }
+        @media (min-width: 667px) and (max-width: 767px) {
+          main .sectionWorks ul li {
+            text-align: left; } }
+        @media (min-width: 480px) and (max-width: 666px) {
+          main .sectionWorks ul li {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+            flex-direction: column;
+            margin-top: 20px; } }
+        @media (min-width: 414px) and (max-width: 479px) {
+          main .sectionWorks ul li {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+            flex-direction: column;
+            margin-top: 20px; } }
+        @media (min-width: 320px) and (max-width: 413px) {
+          main .sectionWorks ul li {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+            flex-direction: column;
+            margin-top: 15px; } }
+      @media (min-width: 1024px) and (max-width: 1110px) {
+        main .sectionWorks ul {
+          width: 1000px; } }
+    main .sectionWorks .sectionWorks__works-img {
+      position: relative; }
+      @media (min-width: 768px) and (max-width: 1023px) {
+        main .sectionWorks .sectionWorks__works-img {
+          width: 220px; } }
+      @media (min-width: 667px) and (max-width: 767px) {
+        main .sectionWorks .sectionWorks__works-img {
+          width: 200px; } }
+      @media (min-width: 320px) and (max-width: 413px) {
+        main .sectionWorks .sectionWorks__works-img {
+          margin-top: 10px; } }
+    main .sectionWorks .sectionWorks__works-text {
+      width: 350px;
+      height: 83px;
+      font-size: 16px;
+      color: #999999;
+      margin-top: 20px;
+      text-align: left;
+      font-family: 'Open Sans';
+      font-style: normal; }
+      @media (min-width: 1024px) and (max-width: 1110px) {
+        main .sectionWorks .sectionWorks__works-text {
+          width: 300px; } }
+      @media (min-width: 768px) and (max-width: 1023px) {
+        main .sectionWorks .sectionWorks__works-text {
+          width: 250px; } }
+      @media (min-width: 667px) and (max-width: 767px) {
+        main .sectionWorks .sectionWorks__works-text {
+          width: 210px;
+          font-size: 12px; } }
+      @media (min-width: 480px) and (max-width: 666px) {
+        main .sectionWorks .sectionWorks__works-text {
+          text-align: center;
+          width: 100%; } }
+      @media (min-width: 414px) and (max-width: 479px) {
+        main .sectionWorks .sectionWorks__works-text {
+          text-align: center;
+          width: 100%; } }
+      @media (min-width: 320px) and (max-width: 413px) {
+        main .sectionWorks .sectionWorks__works-text {
+          text-align: center;
+          width: 100%; } }
+    main .sectionWorks .sectionWorks__works-headline {
+      font-size: 24px;
+      color: #404149;
+      margin-top: 66px;
+      text-align: left; }
+      @media (min-width: 768px) and (max-width: 1023px) {
+        main .sectionWorks .sectionWorks__works-headline {
+          width: 250px; } }
+      @media (min-width: 667px) and (max-width: 767px) {
+        main .sectionWorks .sectionWorks__works-headline {
+          width: 220px; } }
+      @media (min-width: 480px) and (max-width: 666px) {
+        main .sectionWorks .sectionWorks__works-headline {
+          text-align: center; } }
+      @media (min-width: 414px) and (max-width: 479px) {
+        main .sectionWorks .sectionWorks__works-headline {
+          text-align: center; } }
+      @media (min-width: 320px) and (max-width: 413px) {
+        main .sectionWorks .sectionWorks__works-headline {
+          text-align: center; } }
+    main .sectionWorks .sectionWorks__works-headline::before {
+      content: " ";
+      display: block;
+      width: 55px;
+      height: 6px;
+      background-color: #F7654A;
+      margin-bottom: 15px; }
+      @media (min-width: 768px) and (max-width: 1023px) {
+        main .sectionWorks .sectionWorks__works-headline::before {
+          width: 70px; } }
+      @media (min-width: 667px) and (max-width: 767px) {
+        main .sectionWorks .sectionWorks__works-headline::before {
+          width: 50px; } }
+      @media (min-width: 480px) and (max-width: 666px) {
+        main .sectionWorks .sectionWorks__works-headline::before {
+          width: 100%; } }
+      @media (min-width: 414px) and (max-width: 479px) {
+        main .sectionWorks .sectionWorks__works-headline::before {
+          width: 100%; } }
+      @media (min-width: 320px) and (max-width: 413px) {
+        main .sectionWorks .sectionWorks__works-headline::before {
+          width: 100%; } }
+  main .sectionRequest {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 181px;
+    background-color: #F7654A; }
+    @media (min-width: 768px) and (max-width: 1023px) {
+      main .sectionRequest {
+        margin-top: 50px; } }
+    @media (min-width: 667px) and (max-width: 767px) {
+      main .sectionRequest {
+        margin-top: 50px; } }
+    @media (min-width: 480px) and (max-width: 666px) {
+      main .sectionRequest {
+        margin-top: 250px; } }
+    @media (min-width: 414px) and (max-width: 479px) {
+      main .sectionRequest {
+        margin-top: 250px; } }
+    @media (min-width: 320px) and (max-width: 413px) {
+      main .sectionRequest {
+        margin-top: 250px; } }
+    @media (min-width: 480px) and (max-width: 666px) {
+      main .sectionRequest .sctionRequest__wrapper {
+        text-align: center; } }
+    @media (min-width: 414px) and (max-width: 479px) {
+      main .sectionRequest .sctionRequest__wrapper {
+        text-align: center; } }
+    @media (min-width: 320px) and (max-width: 413px) {
+      main .sectionRequest .sctionRequest__wrapper {
+        text-align: center; } }
+    main .sectionRequest .sectionRequest__headline {
+      display: inline-block;
+      color: #FFFFFF;
+      font-size: 48px;
+      margin-top: 30px; }
+      @media (min-width: 768px) and (max-width: 1023px) {
+        main .sectionRequest .sectionRequest__headline {
+          font-size: 30px;
+          margin-top: 40px; } }
+      @media (min-width: 667px) and (max-width: 767px) {
+        main .sectionRequest .sectionRequest__headline {
+          font-size: 24px;
+          margin-top: 50px; } }
+      @media (min-width: 480px) and (max-width: 666px) {
+        main .sectionRequest .sectionRequest__headline {
+          font-size: 30px; } }
+      @media (min-width: 414px) and (max-width: 479px) {
+        main .sectionRequest .sectionRequest__headline {
+          font-size: 25px; } }
+      @media (min-width: 320px) and (max-width: 413px) {
+        main .sectionRequest .sectionRequest__headline {
+          font-size: 20px; } }
+    main .sectionRequest .sectionRequest__text {
+      display: block;
+      font-size: 24px;
+      margin-top: 20px;
+      color: #FFFFFF; }
+      @media (min-width: 768px) and (max-width: 1023px) {
+        main .sectionRequest .sectionRequest__text {
+          font-size: 15px; } }
+      @media (min-width: 667px) and (max-width: 767px) {
+        main .sectionRequest .sectionRequest__text {
+          font-size: 12px; } }
+      @media (min-width: 480px) and (max-width: 666px) {
+        main .sectionRequest .sectionRequest__text {
+          font-size: 20px; } }
+      @media (min-width: 414px) and (max-width: 479px) {
+        main .sectionRequest .sectionRequest__text {
+          font-size: 20px; } }
+      @media (min-width: 320px) and (max-width: 413px) {
+        main .sectionRequest .sectionRequest__text {
+          font-size: 18px; } }
+    main .sectionRequest .sectionRequest_button {
+      width: 175px;
+      height: 49px;
+      background-color: #FFFFFF;
+      position: absolute;
+      top: 73px;
+      right: 0;
+      border-style: none; }
+      @media (min-width: 768px) and (max-width: 1023px) {
+        main .sectionRequest .sectionRequest_button {
+          width: 100px;
+          height: 30px; } }
+      @media (min-width: 667px) and (max-width: 767px) {
+        main .sectionRequest .sectionRequest_button {
+          width: 100px;
+          height: 30px; } }
+      @media (min-width: 480px) and (max-width: 666px) {
+        main .sectionRequest .sectionRequest_button {
+          position: relative;
+          margin: auto;
+          top: 20px;
+          text-align: center; } }
+      @media (min-width: 414px) and (max-width: 479px) {
+        main .sectionRequest .sectionRequest_button {
+          position: relative;
+          margin: auto;
+          top: 20px;
+          text-align: center;
+          width: 150px;
+          height: 35px; } }
+      @media (min-width: 320px) and (max-width: 413px) {
+        main .sectionRequest .sectionRequest_button {
+          position: relative;
+          margin: auto;
+          top: 20px;
+          text-align: center;
+          width: 150px;
+          height: 35px; } }
+      main .sectionRequest .sectionRequest_button .sectionRequest_button-content {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center; }
+        main .sectionRequest .sectionRequest_button .sectionRequest_button-content img {
+          margin-right: 15px; }
+          @media (min-width: 768px) and (max-width: 1023px) {
+            main .sectionRequest .sectionRequest_button .sectionRequest_button-content img {
+              display: none; } }
+          @media (min-width: 667px) and (max-width: 767px) {
+            main .sectionRequest .sectionRequest_button .sectionRequest_button-content img {
+              display: none; } }
+      main .sectionRequest .sectionRequest_button p {
+        display: inline-block;
+        font-size: 14px;
+        color: #000000; }
+        @media (min-width: 768px) and (max-width: 1023px) {
+          main .sectionRequest .sectionRequest_button p {
+            font-size: 12px; } }
+        @media (min-width: 667px) and (max-width: 767px) {
+          main .sectionRequest .sectionRequest_button p {
+            font-size: 10px; } }
+  main .sectionWhatWeDo .sectionWhatWeDo__headline {
+    margin-top: 150px;
+    font-size: 36px;
+    color: #000000;
+    text-align: center; }
+    @media (min-width: 768px) and (max-width: 1023px) {
+      main .sectionWhatWeDo .sectionWhatWeDo__headline {
+        margin-top: 80px; } }
+    @media (min-width: 667px) and (max-width: 767px) {
+      main .sectionWhatWeDo .sectionWhatWeDo__headline {
+        margin-top: 100px; } }
+    @media (min-width: 414px) and (max-width: 479px) {
+      main .sectionWhatWeDo .sectionWhatWeDo__headline {
+        margin-top: 50px; } }
+    @media (min-width: 320px) and (max-width: 413px) {
+      main .sectionWhatWeDo .sectionWhatWeDo__headline {
+        margin-top: 50px; } }
+  main .sectionWhatWeDo ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-top: 66px; }
+    @media (min-width: 667px) and (max-width: 767px) {
+      main .sectionWhatWeDo ul {
+        margin-top: 30px; } }
+    @media (min-width: 320px) and (max-width: 413px) {
+      main .sectionWhatWeDo ul {
+        margin-top: 20px; } }
+  main .sectionWhatWeDo .sectionWhatWeDo__exmpl {
+    width: 350px;
+    height: 250px;
+    text-align: center; }
+    @media (min-width: 1024px) and (max-width: 1110px) {
+      main .sectionWhatWeDo .sectionWhatWeDo__exmpl {
+        width: 300px; } }
+    @media (min-width: 667px) and (max-width: 767px) {
+      main .sectionWhatWeDo .sectionWhatWeDo__exmpl {
+        width: 300px; } }
+    @media (min-width: 480px) and (max-width: 666px) {
+      main .sectionWhatWeDo .sectionWhatWeDo__exmpl {
+        width: 150px; } }
+    @media (min-width: 414px) and (max-width: 479px) {
+      main .sectionWhatWeDo .sectionWhatWeDo__exmpl {
+        width: 130px; } }
+    @media (min-width: 320px) and (max-width: 413px) {
+      main .sectionWhatWeDo .sectionWhatWeDo__exmpl {
+        width: 100px;
+        height: 100%; } }
+  main .sectionWhatWeDo .sectionWhatWeDo__exmpl-icon {
+    margin-top: 59px; }
+  main .sectionWhatWeDo .sectionWhatWeDo__exmpl-text {
+    margin-top: 30px;
+    font-size: 21px;
+    color: #000000; }
+    @media (min-width: 480px) and (max-width: 666px) {
+      main .sectionWhatWeDo .sectionWhatWeDo__exmpl-text {
+        font-size: 16px; } }
+    @media (min-width: 414px) and (max-width: 479px) {
+      main .sectionWhatWeDo .sectionWhatWeDo__exmpl-text {
+        font-size: 14px; } }
+    @media (min-width: 320px) and (max-width: 413px) {
+      main .sectionWhatWeDo .sectionWhatWeDo__exmpl-text {
+        font-size: 10px; } }
+  main .sectionPhotos {
+    display: block;
+    width: 100%; }
+    @media (min-width: 320px) and (max-width: 413px) {
+      main .sectionPhotos {
+        margin-top: 20px; } }
+    main .sectionPhotos .sectionPhotos__photo-wrapper {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap; }
+      @media (min-width: 667px) and (max-width: 767px) {
+        main .sectionPhotos .sectionPhotos__photo-wrapper {
+          -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+          -webkit-box-pack: center;
+          -ms-flex-pack: center;
+          justify-content: center; } }
+      @media (min-width: 480px) and (max-width: 666px) {
+        main .sectionPhotos .sectionPhotos__photo-wrapper {
+          -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+          -webkit-box-pack: center;
+          -ms-flex-pack: center;
+          justify-content: center; } }
+      @media (min-width: 414px) and (max-width: 479px) {
+        main .sectionPhotos .sectionPhotos__photo-wrapper {
+          -ms-flex-wrap: wrap;
+          flex-wrap: wrap; } }
+      @media (min-width: 320px) and (max-width: 413px) {
+        main .sectionPhotos .sectionPhotos__photo-wrapper {
+          -ms-flex-wrap: wrap;
+          flex-wrap: wrap; } }
+    main .sectionPhotos li {
+      max-width: 100%; }
+      @media (min-width: 1024px) and (max-width: 1110px) {
+        main .sectionPhotos li {
+          width: 502px; } }
+      @media (min-width: 667px) and (max-width: 767px) {
+        main .sectionPhotos li {
+          max-width: 50%; } }
+      @media (min-width: 480px) and (max-width: 666px) {
+        main .sectionPhotos li {
+          max-width: 50%; } }
+      @media (min-width: 414px) and (max-width: 479px) {
+        main .sectionPhotos li {
+          max-width: 50%; } }
+      @media (min-width: 320px) and (max-width: 413px) {
+        main .sectionPhotos li {
+          max-width: 50%; } }
+      @media (min-width: 768px) and (max-width: 1023px) {
+        main .sectionPhotos li {
+          width: 380px; } }
+    main .sectionPhotos img {
+      max-width: 100%;
+      height: auto; }
+    main .sectionPhotos ul {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+      main .sectionPhotos ul .sectionPhotos__photo {
+        margin: 0px;
+        padding: 0px; }
+  main .sectionQsA__headline {
+    margin-top: 150px;
+    text-align: center;
+    color: #000000;
+    font-size: 36px; }
+    @media (min-width: 414px) and (max-width: 479px) {
+      main .sectionQsA__headline {
+        margin-top: 50px; } }
+    @media (min-width: 320px) and (max-width: 413px) {
+      main .sectionQsA__headline {
+        margin-top: 40px; } }
+  main .sectionQsA {
+    width: 100%;
+    display: block; }
+    @media (min-width: 768px) and (max-width: 1023px) {
+      main .sectionQsA {
+        text-align: center; } }
+    @media (min-width: 667px) and (max-width: 767px) {
+      main .sectionQsA {
+        text-align: center; } }
+    @media (min-width: 480px) and (max-width: 666px) {
+      main .sectionQsA {
+        text-align: center; } }
+    @media (min-width: 414px) and (max-width: 479px) {
+      main .sectionQsA {
+        text-align: center; } }
+    @media (min-width: 320px) and (max-width: 413px) {
+      main .sectionQsA {
+        text-align: center; } }
+    main .sectionQsA li {
+      margin-bottom: 40px;
+      position: relative; }
+      @media (min-width: 1024px) and (max-width: 1110px) {
+        main .sectionQsA li {
+          margin-left: 20px; } }
+    main .sectionQsA .sectionQsA__ico {
+      vertical-align: text-top;
+      margin-right: 15px; }
+      @media (min-width: 320px) and (max-width: 413px) {
+        main .sectionQsA .sectionQsA__ico {
+          padding-top: 4px; } }
+    main .sectionQsA li:first-child {
+      margin-top: 50px; }
+    main .sectionQsA .sectionQsA__question {
+      font-size: 24px;
+      margin-top: 40px;
+      color: #F7654A; }
+      @media (min-width: 320px) and (max-width: 413px) {
+        main .sectionQsA .sectionQsA__question {
+          font-size: 18px; } }
+    main .sectionQsA .sectionQsA__answer {
+      display: none;
+      font-size: 16px;
+      color: #999999;
+      width: 730px;
+      height: 83px;
+      margin-top: 30px;
+      font-family: 'Open Sans'; }
+      @media (min-width: 667px) and (max-width: 767px) {
+        main .sectionQsA .sectionQsA__answer {
+          width: 650px; } }
+      @media (min-width: 480px) and (max-width: 666px) {
+        main .sectionQsA .sectionQsA__answer {
+          width: 450px;
+          font-size: 14px; } }
+      @media (min-width: 414px) and (max-width: 479px) {
+        main .sectionQsA .sectionQsA__answer {
+          width: 100%;
+          font-size: 12px; } }
+      @media (min-width: 320px) and (max-width: 413px) {
+        main .sectionQsA .sectionQsA__answer {
+          width: 100%;
+          font-size: 12px; } }
+  main .sectionPartners {
+    text-align: center;
+    display: block;
+    width: 100%;
+    height: 364px;
+    background-color: #404149;
+    margin-top: 150px; }
+    @media (min-width: 768px) and (max-width: 1023px) {
+      main .sectionPartners {
+        margin-top: 80px;
+        height: 300px; } }
+    @media (min-width: 667px) and (max-width: 767px) {
+      main .sectionPartners {
+        margin-top: 80px;
+        height: 300px; } }
+    @media (min-width: 320px) and (max-width: 413px) {
+      main .sectionPartners {
+        margin-top: 30px; } }
+    main .sectionPartners .sectionPartners__heading {
+      display: inline-block;
+      color: #FFFFFF;
+      font-size: 36px;
+      margin-top: 100px; }
+      @media (min-width: 667px) and (max-width: 767px) {
+        main .sectionPartners .sectionPartners__heading {
+          margin-top: 50px; } }
+      @media (min-width: 414px) and (max-width: 479px) {
+        main .sectionPartners .sectionPartners__heading {
+          margin-top: 40px; } }
+      @media (min-width: 320px) and (max-width: 413px) {
+        main .sectionPartners .sectionPartners__heading {
+          margin-top: 30px; } }
+    main .sectionPartners .sectionPartners__partners {
+      margin-top: 60px; }
+      @media (min-width: 414px) and (max-width: 479px) {
+        main .sectionPartners .sectionPartners__partners {
+          margin-top: 25px; } }
+      @media (min-width: 320px) and (max-width: 413px) {
+        main .sectionPartners .sectionPartners__partners {
+          margin-top: 20px; } }
+      main .sectionPartners .sectionPartners__partners .sectionPartners__partners-img {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between; }
+        @media (min-width: 667px) and (max-width: 767px) {
+          main .sectionPartners .sectionPartners__partners .sectionPartners__partners-img li {
+            width: 150px; } }
+        @media (min-width: 480px) and (max-width: 666px) {
+          main .sectionPartners .sectionPartners__partners .sectionPartners__partners-img li {
+            width: 100px; } }
+        @media (min-width: 414px) and (max-width: 479px) {
+          main .sectionPartners .sectionPartners__partners .sectionPartners__partners-img {
+            display: block; } }
+        @media (min-width: 320px) and (max-width: 413px) {
+          main .sectionPartners .sectionPartners__partners .sectionPartners__partners-img {
+            display: block; } }
+  main .sectionReviesws {
+    display: block; }
+    main .sectionReviesws .sectionReviesws__heading {
+      display: block;
+      margin-top: 150px;
+      text-align: center;
+      color: #000000;
+      font-size: 36px; }
+      @media (min-width: 768px) and (max-width: 1023px) {
+        main .sectionReviesws .sectionReviesws__heading {
+          margin-top: 80px; } }
+      @media (min-width: 667px) and (max-width: 767px) {
+        main .sectionReviesws .sectionReviesws__heading {
+          margin-top: 80px; } }
+      @media (min-width: 320px) and (max-width: 413px) {
+        main .sectionReviesws .sectionReviesws__heading {
+          margin-top: 50px; } }
+    main .sectionReviesws .sectionReviesws__blocks {
+      margin-top: 64px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+      justify-content: space-between; }
+      @media (min-width: 480px) and (max-width: 666px) {
+        main .sectionReviesws .sectionReviesws__blocks {
+          -webkit-box-orient: vertical;
+          -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+          flex-direction: column; } }
+      @media (min-width: 414px) and (max-width: 479px) {
+        main .sectionReviesws .sectionReviesws__blocks {
+          -webkit-box-orient: vertical;
+          -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+          flex-direction: column; } }
+      @media (min-width: 320px) and (max-width: 413px) {
+        main .sectionReviesws .sectionReviesws__blocks {
+          -webkit-box-orient: vertical;
+          -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+          flex-direction: column; } }
+      main .sectionReviesws .sectionReviesws__blocks .sectionReviesws__blocks-comment {
+        width: 350px;
+        height: 259px;
+        background-color: #F7F7F7; }
+        @media (min-width: 768px) and (max-width: 1023px) {
+          main .sectionReviesws .sectionReviesws__blocks .sectionReviesws__blocks-comment {
+            width: 250px; } }
+        @media (min-width: 667px) and (max-width: 767px) {
+          main .sectionReviesws .sectionReviesws__blocks .sectionReviesws__blocks-comment {
+            width: 220px; } }
+        @media (min-width: 480px) and (max-width: 666px) {
+          main .sectionReviesws .sectionReviesws__blocks .sectionReviesws__blocks-comment {
+            margin: auto; } }
+        @media (min-width: 414px) and (max-width: 479px) {
+          main .sectionReviesws .sectionReviesws__blocks .sectionReviesws__blocks-comment {
+            margin: auto; } }
+        @media (min-width: 320px) and (max-width: 413px) {
+          main .sectionReviesws .sectionReviesws__blocks .sectionReviesws__blocks-comment {
+            margin: auto;
+            width: 300px; } }
+        main .sectionReviesws .sectionReviesws__blocks .sectionReviesws__blocks-comment p {
+          width: 290px;
+          height: 142px;
+          font-size: 14px;
+          color: #999999;
+          margin-left: 24px;
+          font-family: 'Open Sans'; }
+          @media (min-width: 768px) and (max-width: 1023px) {
+            main .sectionReviesws .sectionReviesws__blocks .sectionReviesws__blocks-comment p {
+              width: 200px; } }
+          @media (min-width: 667px) and (max-width: 767px) {
+            main .sectionReviesws .sectionReviesws__blocks .sectionReviesws__blocks-comment p {
+              width: 180px; } }
+        main .sectionReviesws .sectionReviesws__blocks .sectionReviesws__blocks-comment p:before {
+          content: "“";
+          display: block;
+          font-size: 96px;
+          color: #F7654A;
+          font-family: 'Oswald'; }
+    main .sectionReviesws .sectionReviesws__name-text-сopy {
+      color: #000000;
+      display: none; }
+      main .sectionReviesws .sectionReviesws__name-text-сopy span {
+        color: #F7654A; }
+      @media (min-width: 480px) and (max-width: 666px) {
+        main .sectionReviesws .sectionReviesws__name-text-сopy {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-pack: center;
+          -ms-flex-pack: center;
+          justify-content: center;
+          margin: 15px 0 15px 0; } }
+      @media (min-width: 414px) and (max-width: 479px) {
+        main .sectionReviesws .sectionReviesws__name-text-сopy {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-pack: center;
+          -ms-flex-pack: center;
+          justify-content: center;
+          margin: 15px 0 15px 0; } }
+      @media (min-width: 320px) and (max-width: 413px) {
+        main .sectionReviesws .sectionReviesws__name-text-сopy {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-pack: center;
+          -ms-flex-pack: center;
+          justify-content: center;
+          margin: 15px 0 15px 0; } }
+    main .sectionReviesws .sectionReviesws__name {
+      margin-top: 30px; }
+      @media (min-width: 480px) and (max-width: 666px) {
+        main .sectionReviesws .sectionReviesws__name {
+          display: none; } }
+      @media (min-width: 414px) and (max-width: 479px) {
+        main .sectionReviesws .sectionReviesws__name {
+          display: none; } }
+      @media (min-width: 320px) and (max-width: 413px) {
+        main .sectionReviesws .sectionReviesws__name {
+          display: none; } }
+      main .sectionReviesws .sectionReviesws__name .sectionReviews__name-text {
+        color: #000000; }
+      main .sectionReviesws .sectionReviesws__name span {
+        color: #F7654A; }
+      main .sectionReviesws .sectionReviesws__name .sectionReviesws__name-block {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        font-size: 21px; }
+        @media (min-width: 768px) and (max-width: 1023px) {
+          main .sectionReviesws .sectionReviesws__name .sectionReviesws__name-block {
+            font-size: 18px; } }
+        @media (min-width: 667px) and (max-width: 767px) {
+          main .sectionReviesws .sectionReviesws__name .sectionReviesws__name-block {
+            font-size: 14px; } }
+  main .sectionWithUs {
+    margin-top: 150px;
+    width: 100%;
+    background-color: #F7654A; }
+    @media (min-width: 480px) and (max-width: 666px) {
+      main .sectionWithUs {
+        margin-top: -300px; } }
+    @media (min-width: 414px) and (max-width: 479px) {
+      main .sectionWithUs {
+        margin-top: -280px; } }
+    @media (min-width: 320px) and (max-width: 413px) {
+      main .sectionWithUs {
+        margin-top: -220px; } }
+  @media (min-width: 1024px) and (max-width: 1110px) {
+    main .layout {
+      width: 1000px; } }
+  @media (min-width: 768px) and (max-width: 1023px) {
+    main .layout {
+      width: 750px; } }
+  @media (min-width: 667px) and (max-width: 767px) {
+    main .layout {
+      width: 650px; } }
+  @media (min-width: 480px) and (max-width: 666px) {
+    main .layout {
+      width: 450px; } }
+  @media (min-width: 414px) and (max-width: 479px) {
+    main .layout {
+      width: 400px; } }
+  @media (min-width: 320px) and (max-width: 413px) {
+    main .layout {
+      width: 300px; } }
+
+/**********FOOOTERR**********/
+footer {
+  font-family: 'Open Sans'; }
+  footer .layout {
+    display: block;
+    width: 1110px;
+    margin: 0 auto; }
+  footer .sectionContacts__headline {
+    margin-top: 100px; }
+    @media (min-width: 414px) and (max-width: 479px) {
+      footer .sectionContacts__headline {
+        margin-top: 60px; } }
+    @media (min-width: 320px) and (max-width: 413px) {
+      footer .sectionContacts__headline {
+        margin-top: 60px; } }
+    footer .sectionContacts__headline p {
+      text-align: center;
+      font-size: 36px;
+      color: #000000; }
+      @media (min-width: 768px) and (max-width: 1023px) {
+        footer .sectionContacts__headline p {
+          font-size: 26px; } }
+      @media (min-width: 667px) and (max-width: 767px) {
+        footer .sectionContacts__headline p {
+          font-size: 24px; } }
+      @media (min-width: 480px) and (max-width: 666px) {
+        footer .sectionContacts__headline p {
+          font-size: 20px; } }
+      @media (min-width: 414px) and (max-width: 479px) {
+        footer .sectionContacts__headline p {
+          font-size: 20px; } }
+      @media (min-width: 320px) and (max-width: 413px) {
+        footer .sectionContacts__headline p {
+          font-size: 20px; } }
+  footer .sectionContacts__contacts {
+    margin-top: 60px;
+    text-align: center; }
+    @media (min-width: 320px) and (max-width: 413px) {
+      footer .sectionContacts__contacts {
+        margin-top: 40px; } }
+    footer .sectionContacts__contacts .sectionContacts__contacts-block-wapper {
+      margin-bottom: 20px;
+      text-align: center; }
+    footer .sectionContacts__contacts .sectionContacts__contacts-block {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+      justify-content: space-between; }
+      @media (min-width: 320px) and (max-width: 413px) {
+        footer .sectionContacts__contacts .sectionContacts__contacts-block {
+          -webkit-box-orient: horizontal;
+          -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+          flex-direction: row;
+          -ms-flex-wrap: wrap;
+          flex-wrap: wrap; } }
+      footer .sectionContacts__contacts .sectionContacts__contacts-block li:last-child {
+        margin-top: 11px; }
+        @media (min-width: 667px) and (max-width: 767px) {
+          footer .sectionContacts__contacts .sectionContacts__contacts-block li:last-child {
+            margin-top: 8px; } }
+        @media (min-width: 480px) and (max-width: 666px) {
+          footer .sectionContacts__contacts .sectionContacts__contacts-block li:last-child {
+            margin-top: 5px; } }
+        @media (min-width: 414px) and (max-width: 479px) {
+          footer .sectionContacts__contacts .sectionContacts__contacts-block li:last-child {
+            margin-top: 5px; } }
+      @media (min-width: 667px) and (max-width: 767px) {
+        footer .sectionContacts__contacts .sectionContacts__contacts-block .sectionContacts__contacts-ico {
+          width: 30px; } }
+      @media (min-width: 480px) and (max-width: 666px) {
+        footer .sectionContacts__contacts .sectionContacts__contacts-block .sectionContacts__contacts-ico {
+          width: 25px; } }
+      @media (min-width: 414px) and (max-width: 479px) {
+        footer .sectionContacts__contacts .sectionContacts__contacts-block .sectionContacts__contacts-ico {
+          width: 20px; } }
+      @media (min-width: 667px) and (max-width: 767px) {
+        footer .sectionContacts__contacts .sectionContacts__contacts-block .sectionContacts__contacts-ico-first {
+          width: 30px; } }
+      @media (min-width: 480px) and (max-width: 666px) {
+        footer .sectionContacts__contacts .sectionContacts__contacts-block .sectionContacts__contacts-ico-first {
+          width: 19px; } }
+      @media (min-width: 414px) and (max-width: 479px) {
+        footer .sectionContacts__contacts .sectionContacts__contacts-block .sectionContacts__contacts-ico-first {
+          width: 15px; } }
+    footer .sectionContacts__contacts .sectionContacts__contacts-text {
+      font-size: 24px;
+      color: #999999;
+      margin-top: 30px;
+      font-weight: bold; }
+      @media (min-width: 768px) and (max-width: 1023px) {
+        footer .sectionContacts__contacts .sectionContacts__contacts-text {
+          font-size: 20px; } }
+      @media (min-width: 667px) and (max-width: 767px) {
+        footer .sectionContacts__contacts .sectionContacts__contacts-text {
+          font-size: 16px; } }
+      @media (min-width: 480px) and (max-width: 666px) {
+        footer .sectionContacts__contacts .sectionContacts__contacts-text {
+          font-size: 14px; } }
+      @media (min-width: 414px) and (max-width: 479px) {
+        footer .sectionContacts__contacts .sectionContacts__contacts-text {
+          font-size: 14px; } }
+      @media (min-width: 320px) and (max-width: 413px) {
+        footer .sectionContacts__contacts .sectionContacts__contacts-text {
+          font-size: 18px; } }
+    footer .sectionContacts__contacts .sectionContacts__contacts-address {
+      font-size: 24px;
+      color: #000000;
+      margin-top: 25px; }
+      @media (min-width: 768px) and (max-width: 1023px) {
+        footer .sectionContacts__contacts .sectionContacts__contacts-address {
+          font-size: 16px; } }
+      @media (min-width: 667px) and (max-width: 767px) {
+        footer .sectionContacts__contacts .sectionContacts__contacts-address {
+          font-size: 14px; } }
+      @media (min-width: 480px) and (max-width: 666px) {
+        footer .sectionContacts__contacts .sectionContacts__contacts-address {
+          font-size: 11px; } }
+      @media (min-width: 414px) and (max-width: 479px) {
+        footer .sectionContacts__contacts .sectionContacts__contacts-address {
+          font-size: 10px; } }
+      @media (min-width: 320px) and (max-width: 413px) {
+        footer .sectionContacts__contacts .sectionContacts__contacts-address {
+          font-size: 14px; } }
+      footer .sectionContacts__contacts .sectionContacts__contacts-address a {
+        color: #F7654A; }
+  footer .sectionFooter {
+    margin-top: 150px;
+    width: 100%;
+    height: 82px;
+    background-color: #404149;
+    font-size: 16px;
+    color: #FFFFFF; }
+    @media (min-width: 768px) and (max-width: 1023px) {
+      footer .sectionFooter {
+        font-size: 14px;
+        margin-top: 50px; } }
+    @media (min-width: 667px) and (max-width: 767px) {
+      footer .sectionFooter {
+        font-size: 10px;
+        margin-top: 50px; } }
+    @media (min-width: 480px) and (max-width: 666px) {
+      footer .sectionFooter {
+        font-size: 10px;
+        margin-top: 40px; } }
+    @media (min-width: 414px) and (max-width: 479px) {
+      footer .sectionFooter {
+        font-size: 10px;
+        margin-top: 70px; } }
+    @media (min-width: 320px) and (max-width: 413px) {
+      footer .sectionFooter {
+        margin-top: 10px;
+        font-size: 10px; } }
+    footer .sectionFooter .sectionFooter__c {
+      margin-top: 30px;
+      display: inline-block; }
+      @media (min-width: 320px) and (max-width: 413px) {
+        footer .sectionFooter .sectionFooter__c {
+          margin: auto;
+          text-align: center;
+          display: block; } }
+      @media (min-width: 320px) and (max-width: 413px) {
+        footer .sectionFooter .sectionFooter__c .sectionFooter__c-text {
+          display: inline-block;
+          margin-top: 10px; } }
+    footer .sectionFooter .sectionFooter__stduio {
+      float: right;
+      margin-top: 30px; }
+      @media (min-width: 320px) and (max-width: 413px) {
+        footer .sectionFooter .sectionFooter__stduio {
+          display: block;
+          text-align: center;
+          float: none; } }
+  @media (min-width: 1024px) and (max-width: 1110px) {
+    footer .layout {
+      width: 1000px; } }
+  @media (min-width: 768px) and (max-width: 1023px) {
+    footer .layout {
+      width: 750px; } }
+  @media (min-width: 667px) and (max-width: 767px) {
+    footer .layout {
+      width: 650px; } }
+  @media (min-width: 480px) and (max-width: 666px) {
+    footer .layout {
+      width: 450px; } }
+  @media (min-width: 414px) and (max-width: 479px) {
+    footer .layout {
+      width: 400px; } }
+  @media (min-width: 320px) and (max-width: 413px) {
+    footer .layout {
+      width: 300px; } }
